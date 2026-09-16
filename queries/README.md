@@ -1,8 +1,10 @@
 # Query source
 
-These six SQL files are the **canonical production SQL**, copied from the Dune queries that power the
-[V1 dashboard](https://dune.com/13seeker/uniswap-on-base-user-quality-activity-v1). Running a file in the
-Dune editor reproduces the dashboard panel it belongs to.
+The six Dune queries listed below are the canonical production source for
+[Uniswap on Base — Activity, Concentration & Return Behavior (V1)](https://dune.com/13seeker/uniswap-on-base-user-quality-activity-v1).
+The SQL files in this directory are readable versions of that production SQL, kept in the repository so the
+V1 record is legible without a Dune account. Header comments differ where terminology was aligned at the V1
+freeze; the logic, filters and output columns are the same.
 
 | Query | Purpose | Anomaly exclusion | Link |
 |---|---|---|---|
@@ -12,6 +14,9 @@ Dune editor reproduces the dashboard panel it belongs to.
 | 8733974 | Wallet/transaction concentration | volume only | https://dune.com/queries/8733974 |
 | 8733441 | Observed return behavior | none | https://dune.com/queries/8733441 |
 | 8733980 | Methodology and definitions | n/a (static table) | https://dune.com/queries/8733980 |
+
+Diagnostic queries used for the Aug 18 case study are listed in
+[`../diagnostics/AUG18_ANOMALY.md`](../diagnostics/AUG18_ANOMALY.md).
 
 ## Conventions used by every query
 
@@ -23,5 +28,11 @@ Dune editor reproduces the dashboard panel it belongs to.
 - **The exclusion never filters rows.** The three anomalous hashes sit in a `LEFT JOIN`ed CTE and are
   applied only inside `SUM(amount_usd)`, so wallet and transaction counts are identical with or
   without it.
-- **"Returned on a 2nd day"** means activity on any later calendar day inside the window, not
-  activity within two days.
+- **Return means a later calendar day.** The all-wallet 38.26% figure counts activity on any later UTC
+  calendar day inside the window, not activity within 48 hours. Column names keep a `d7` / `d14` / `d30`
+  shorthand so the published queries and dashboard panels continue to resolve.
+
+## Snapshot
+
+V1 snapshot date: 16 September 2026. Dune's datasets are continuously refreshed, so re-executing these
+queries may produce different figures than the frozen V1 record.

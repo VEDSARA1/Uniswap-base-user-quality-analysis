@@ -1,5 +1,7 @@
 # Aug 18, 2026 data-quality case study
 
+Part of *Uniswap on Base - Activity, Concentration & Return Behavior (V1)*. V1 snapshot date: 16 September 2026.
+
 Three Uniswap v4 transactions accounted for approximately $28.23B of reported volume on Aug 18, 2026.
 
 Excluded hashes:
@@ -14,7 +16,7 @@ Key checks:
 - The largest nominal USDC rows came from pools with exactly zero liquidity.
 - `dex.trades` reported about 28.15B USDC of swap amounts, while ERC-20 transfer logs showed only 0.000247 USDC transferred into PoolManager and none leaving it.
 - The pattern is consistent with Uniswap v4 atomic/flash-accounting behavior and does not indicate a Dune transformation defect.
-- The three transactions are excluded from volume metrics only. Wallet counts, transaction counts, frequency and return behavior retain them.
+- The three transactions are excluded from volume metrics only. Wallet counts, transaction counts, frequency and return-behavior metrics retain them.
 - No malicious intent is inferred.
 
 ## Diagnostic queries

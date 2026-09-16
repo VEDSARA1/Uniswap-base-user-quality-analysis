@@ -1,11 +1,12 @@
 -- Dune query 8733441 — canonical source: https://dune.com/queries/8733441
--- Uniswap on Base — User Quality & Activity V1 · Query 5: Retention / observed return behavior
+-- Uniswap on Base — Activity, Concentration & Return Behavior V1 · Query 5: Observed return behavior
 -- Window      : 2026-08-16 .. 2026-09-15 inclusive (31 days)
 -- Scope       : dex.trades, blockchain = 'base', project = 'uniswap' (v2, v3, v4)
 -- Wallet      : tx_from | First active date: earliest block_date in window (not lifetime first trade)
--- Retention   : activity on a later calendar day; "within N days" = any active day in first_date+1 .. first_date+N
---               "Returned on a 2nd day" = activity on ANY later calendar day inside the window.
--- Eligibility : 2nd day first_date <= 2026-09-14 | D7 <= 2026-09-08 | D14 <= 2026-09-01 | D30 = 2026-08-16
+-- Return      : activity on a later calendar day; "within N days" = any active day in first_date+1 .. first_date+N
+--               "Returned on a later day" = activity on ANY later calendar day inside the window.
+--               This is not conventional D2 retention and does not mean return within 48 hours.
+-- Eligibility : later day first_date <= 2026-09-14 | D7 <= 2026-09-08 | D14 <= 2026-09-01 | D30 = 2026-08-16
 -- Segments    : full-window tx count (descriptive only; overlaps the outcome period)
 -- No anomaly exclusion: this query measures activity, not volume.
 

@@ -1,5 +1,5 @@
 -- Dune query 8731863 — canonical source: https://dune.com/queries/8731863
--- Uniswap on Base — User Quality & Activity V1 · Query 3: Transaction-frequency distribution
+-- Uniswap on Base — Activity, Concentration & Return Behavior V1 · Query 3: Transaction-frequency distribution
 -- Window : 2026-08-16 .. 2026-09-15 inclusive (31 days)
 -- Scope  : dex.trades, blockchain = 'base', project = 'uniswap' (v2, v3, v4)
 -- Wallet : tx_from | Transaction: distinct tx_hash | Buckets are descriptive only
