@@ -93,8 +93,7 @@ See [`diagnostics/AUG18_ANOMALY.md`](diagnostics/AUG18_ANOMALY.md) and the full 
 
 ```text
 report/
-  Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx   (editable source)
-  Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.pdf    (rendered report)
+  Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx
 
 queries/
   8733968_overview.sql
@@ -111,13 +110,11 @@ diagnostics/
 
 ## Report
 
-[PDF report - V1.3](report/Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.pdf)
-[Editable DOCX source - V1.3](report/Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx)
+[Report - V1.3 (DOCX)](report/Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx)
 
-> **Note.** Both carry the V1.3 title, terminology, snapshot statement and limitations. One cosmetic
-> difference remains: the PDF was exported before the running page header was corrected, so its page header
-> still reads "USER QUALITY & ACTIVITY". The body text, all figures and the DOCX source are correct; a
-> re-export from the current DOCX will clear it.
+> **Note.** The report is distributed as a single DOCX. GitHub does not preview DOCX in the browser, so
+> download it and open it in Word, LibreOffice or Google Docs. An earlier PDF rendering was removed because
+> it was exported before the running page header was corrected; no figure differed between the two.
 
 The Dune queries linked from [`queries/README.md`](queries/README.md) are the canonical production source; the
 SQL files under `queries/` are readable versions maintained alongside them.
