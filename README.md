@@ -93,8 +93,8 @@ See [`diagnostics/AUG18_ANOMALY.md`](diagnostics/AUG18_ANOMALY.md) and the full 
 
 ```text
 report/
-  Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx   (current)
-  Uniswap_on_Base_User_Quality_Activity_V1_1_Serious_Report.pdf             (older rendering)
+  Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx   (editable source)
+  Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.pdf    (rendered report)
 
 queries/
   8733968_overview.sql
@@ -111,13 +111,13 @@ diagnostics/
 
 ## Report
 
-[Editable DOCX report - current](report/Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx)
-[PDF report - earlier rendering](report/Uniswap_on_Base_User_Quality_Activity_V1_1_Serious_Report.pdf)
+[PDF report - V1.3](report/Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.pdf)
+[Editable DOCX source - V1.3](report/Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx)
 
-> **Note.** The DOCX carries the current title, terminology and limitations. The PDF is an earlier rendering
-> that still uses the former title and the "D2" label; no DOCX-to-PDF converter was available in the
-> environment used to prepare this freeze, so it needs a re-export from the current DOCX. No figure differs
-> between the two.
+> **Note.** Both carry the V1.3 title, terminology, snapshot statement and limitations. One cosmetic
+> difference remains: the PDF was exported before the running page header was corrected, so its page header
+> still reads "USER QUALITY & ACTIVITY". The body text, all figures and the DOCX source are correct; a
+> re-export from the current DOCX will clear it.
 
 The Dune queries linked from [`queries/README.md`](queries/README.md) are the canonical production source; the
 SQL files under `queries/` are readable versions maintained alongside them.
