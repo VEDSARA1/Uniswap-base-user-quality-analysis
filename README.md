@@ -12,13 +12,11 @@ identify individual humans, classify bots, or construct a formal measure of user
 
 ## Snapshot and reproducibility
 
-V1 snapshot date: 16 September 2026. Dune's underlying datasets are continuously refreshed, so future query
-executions may produce different results. The figures and conclusions in this report refer specifically to the
-V1 analytical snapshot captured on 16 September 2026.
+Dune's underlying datasets are continuously refreshed, so future query executions may produce different
+results. Every figure here refers to the V1 snapshot captured on 16 September 2026.
 
-The [live Dune dashboard](https://dune.com/13seeker/uniswap-on-base-activity-concentration-return-behavior-v1) is an interactive
-reference that re-executes against current data; this repository and the report preserve the historical V1
-record.
+The [live Dune dashboard](https://dune.com/13seeker/uniswap-on-base-activity-concentration-return-behavior-v1)
+re-executes against current data; this repository and the report preserve the V1 record.
 
 ## Final V1 results
 
@@ -107,16 +105,15 @@ diagnostics/
   AUG18_ANOMALY.md
 ```
 
+The Dune queries linked from [`queries/README.md`](queries/README.md) are the canonical production source; the
+SQL files under `queries/` are readable versions maintained alongside them.
+
 ## Report
 
 [Report - V1.3 (DOCX)](report/Uniswap_on_Base_Activity_Concentration_Return_Behavior_V1_3_Report.docx)
 
-> **Note.** The report is distributed as a single DOCX. GitHub does not preview DOCX in the browser, so
-> download it and open it in Word, LibreOffice or Google Docs. An earlier PDF rendering was removed because
-> it was exported before the running page header was corrected; no figure differed between the two.
-
-The Dune queries linked from [`queries/README.md`](queries/README.md) are the canonical production source; the
-SQL files under `queries/` are readable versions maintained alongside them.
+GitHub does not preview DOCX in the browser - download the file and open it in Word, LibreOffice or
+Google Docs.
 
 ## Project status
 
