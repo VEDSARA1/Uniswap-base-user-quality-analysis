@@ -1,7 +1,7 @@
 # Query source
 
 The six Dune queries listed below are the canonical production source for
-[Uniswap on Base — Activity, Concentration & Return Behavior (V1)](https://dune.com/13seeker/uniswap-on-base-user-quality-activity-v1).
+[Uniswap on Base — Activity, Concentration & Return Behavior (V1)](https://dune.com/13seeker/uniswap-on-base-activity-concentration-return-behavior-v1).
 The SQL files in this directory are readable versions of that production SQL, kept in the repository so the
 V1 record is legible without a Dune account. Header comments differ where terminology was aligned at the V1
 freeze; the logic, filters and output columns are the same.

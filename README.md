@@ -16,10 +16,9 @@ V1 snapshot date: 16 September 2026. Dune's underlying datasets are continuously
 executions may produce different results. The figures and conclusions in this report refer specifically to the
 V1 analytical snapshot captured on 16 September 2026.
 
-The [live Dune dashboard](https://dune.com/13seeker/uniswap-on-base-user-quality-activity-v1) is an interactive
+The [live Dune dashboard](https://dune.com/13seeker/uniswap-on-base-activity-concentration-return-behavior-v1) is an interactive
 reference that re-executes against current data; this repository and the report preserve the historical V1
-record. The dashboard URL slug still contains the project's earlier working title and is kept unchanged so
-existing links continue to resolve.
+record.
 
 ## Final V1 results
 
