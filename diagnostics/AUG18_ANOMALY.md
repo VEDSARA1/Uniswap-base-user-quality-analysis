@@ -16,3 +16,10 @@ Key checks:
 - The pattern is consistent with Uniswap v4 atomic/flash-accounting behavior and does not indicate a Dune transformation defect.
 - The three transactions are excluded from volume metrics only. Wallet counts, transaction counts, frequency and return behavior retain them.
 - No malicious intent is inferred.
+
+## Diagnostic queries
+
+| Query | Check | Link |
+|---|---|---|
+| 8740049 | Raw v4 Swap events reconciled 1:1 against `dex.trades` | https://dune.com/queries/8740049 |
+| 8740085 | Reported token amounts vs ERC-20 transfers and net PoolManager settlement | https://dune.com/queries/8740085 |

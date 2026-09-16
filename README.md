@@ -51,8 +51,8 @@ See [`diagnostics/AUG18_ANOMALY.md`](diagnostics/AUG18_ANOMALY.md) and the full 
 
 ```text
 report/
-  Uniswap_on_Base_User_Quality_Activity_V1_1_Serious_Report.pdf
-  Uniswap_on_Base_User_Quality_Activity_V1_1_Serious_Report.docx
+  Uniswap_on_Base_User_Quality_Activity_V1_2_Serious_Report.docx   (current)
+  Uniswap_on_Base_User_Quality_Activity_V1_1_Serious_Report.pdf    (older rendering)
 
 queries/
   8733968_overview.sql
@@ -69,8 +69,12 @@ diagnostics/
 
 ## Report
 
-[PDF report](report/Uniswap_on_Base_User_Quality_Activity_V1_1_Serious_Report.pdf)  
-[Editable DOCX report](report/Uniswap_on_Base_User_Quality_Activity_V1_1_Serious_Report.docx)
+[Editable DOCX report - V1.2, current](report/Uniswap_on_Base_User_Quality_Activity_V1_2_Serious_Report.docx)  
+[PDF report - V1.1](report/Uniswap_on_Base_User_Quality_Activity_V1_1_Serious_Report.pdf)
+
+> **Note.** V1.2 renames the all-wallet return metric from "D2" to "2nd-day return", because it measures
+> activity on *any* later calendar day inside the window, not activity within two days. No figure changed.
+> The PDF is still the V1.1 rendering and carries the old label; re-export it from the V1.2 DOCX to refresh it.
 
 The Dune queries linked above are the production source of truth; the SQL files under `queries/` are exact copies of that production SQL.
 
